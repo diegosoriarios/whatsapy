@@ -43,7 +43,7 @@ class terminalChat():
 
     def selectChatroom(self):
         print(colored("Info! Available chatrooms are %s" % str(self.chatrooms), "blue"))
-        chatroom = input(colored("Please select a chatroom: ", "green"))
+        chatroom = raw_input(colored("Please select a chatroom: ", "green"))
         if chatroom in self.chatrooms:
             self.chatroom = chatroom
             self.initPusher()
